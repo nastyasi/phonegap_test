@@ -38,6 +38,7 @@ var app = {
         alert($);
 
         $.ajax({
+            type: 'POST',
             url: "http://nastya.dnpsaas.zettacode.ru/gefest/users/default/login",
             data: {"availableWidgets":false,"attrWidgets":[]},
             success: function(){

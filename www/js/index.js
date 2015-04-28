@@ -43,7 +43,7 @@ var app = {
 
         $.ajax({
             url: "http://nastya.dnpsaas.zettacode.ru/gefest/users/default/login",
-            data: {"availableWidgets":false,"attrWidgets":[]},
+            data: {"availableWidgets":false,"attrWidgets":[], "ajax": true},
             success: function(){
                 alert(arguments[0].template);
             }

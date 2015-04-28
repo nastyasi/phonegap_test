@@ -45,7 +45,7 @@ var app = {
             url: "http://nastya.dnpsaas.zettacode.ru/gefest/users/default/login",
             data: {"availableWidgets":false,"attrWidgets":[]},
             success: function(){
-                alert(arguments[0]);
+                alert(arguments[0].template);
             }
         });
 

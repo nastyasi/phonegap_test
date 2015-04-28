@@ -37,6 +37,14 @@ var app = {
         alert("ready");
         alert($);
 
+        $.ajax({
+            url: "http://nastya.dnpsaas.zettacode.ru/gefest/users/default/login",
+            data: {"availableWidgets":false,"attrWidgets":[]},
+            success: function(){
+                alert("ok");
+            }
+        });
+
         //onload();
     },
     // Update DOM on a Received Event

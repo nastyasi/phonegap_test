@@ -37,8 +37,11 @@ var app = {
         alert("ready");
         alert($);
 
+        $.ajaxSetup({
+            type: 'POST'
+        });
+
         $.ajax({
-            type: 'POST',
             url: "http://nastya.dnpsaas.zettacode.ru/gefest/users/default/login",
             data: {"availableWidgets":false,"attrWidgets":[]},
             success: function(){
